@@ -12,7 +12,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('builders-test-app app is running!');
+    expect(await page.getTitleText()).toEqual('test-project app is running!');
     await SkyVisual.compareScreenshot('body', {
       screenshotName: 'foobar'
     });
